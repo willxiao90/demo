@@ -2,47 +2,16 @@
 <html lang="zh">
 <head>
   <meta charset="utf-8">
-  <title>新东方比邻5</title>
+  <title>新东方比邻6</title>
   <base href="/demo/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="description" content="新东方比邻！"/>
   <meta name="keyword" content="新东方比邻,比邻东方"/>
-<link rel="stylesheet" href="styles.a936303458f8b3f45861.css"></head>
+<link rel="stylesheet" href="styles.3a9555a66a91efbce5a9.css"></head>
 <body>
   <app-root></app-root>
   
   <script src="https://aiedu.qcloud.com/soe/TencentSOE-0.1.4.js"></script>
-<script src="runtime.6739e47132098d5198ce.js" defer></script><script src="polyfills.a9bc1cc0c4041132df74.js" defer></script><script src="scripts.d104d014c38a9e3db595.js" defer></script><script src="main.75f6eb1e7ca75561d85d.js" defer></script>
-<script>
-  navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
-    navigator.mozGetUserMedia || navigator.msGetUserMedia;
-
-  if (navigator.getUserMedia) {
-    navigator.getUserMedia({
-      audio: true
-    }, mediaStream => {
-      let audioContext = new (window.AudioContext || window.webkitAudioContext)();
-      let mediaStreamSource = audioContext.createMediaStreamSource(mediaStream);
-      console.log(audioContext, mediaStreamSource);
-
-    }, () => {
-      console.log('未开启麦克风访问权限')
-    });
-  } else if (navigator.mediaDevices.getUserMedia) { // safari
-    navigator.mediaDevices.getUserMedia({
-      audio: true
-    }).then(mediaStream => {
-      let audioContext = new (window.AudioContext || window.webkitAudioContext)();
-      let mediaStreamSource = audioContext.createMediaStreamSource(mediaStream);
-      console.log(audioContext, mediaStreamSource);
-    })
-      .catch(() => {
-        console.log('未开启麦克风访问权限')
-      });
-  } else {
-    console.log('当前浏览器不支持录音功能，请更换浏览器')
-  }
-</script>
-</body>
+<script src="runtime.6739e47132098d5198ce.js" defer></script><script src="polyfills.a9bc1cc0c4041132df74.js" defer></script><script src="scripts.d104d014c38a9e3db595.js" defer></script><script src="main.cf0202299b3985a4c2ae.js" defer></script></body>
 </html>
